@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+        body {
+            background-color: almond;
+            font-size: small;
+        }
+        #wrapper {
+            display:grid;
+          
+            grid-template-columns: 600px;
+            /* grid-template-rows: auto;    trebuie sa schimb la randuri!!! */
+           
+            grid-template-areas: 
+            "hd "
+            "main"
+            "ft"
+            ;
+        }
+        #header {
+            grid-area: hd;
+        }
+        .contentArea {
+            grid-area: main;
+            padding: 1rem;
+            font-size: 0.8rem;
+                 }
+     #footer {
+         grid-area: ft;
+     }
+     .myBtn:hover {
+        background-color: #555; 
+        color:white;
+      }
+   
+}
+
+
+
+
+
+
+/*  (medium screen) */
+@media (min-width: 600px)  and (max-width:900px) {
+    body {
+        background-color: yellow;
+
+    }
+ 
+    .myBtn:hover {
+        background-color: #555; 
+        color:white;
+      }
+
+    #details {
+        display: grid;
+        font-size: 0.8rem;
+        font-size: 0.8rem;
+        width:80vw;
+        margin:  auto;
+        grid-template-columns: 10vw 65vw;
+        grid-template-rows: 30vh 6vh;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "topLeft  topRight"
+        "bottomLeft bottomRight"
+        ;
+    }
+    
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         }
+    #ProfessionalSummary {
+        grid-area: topLeft;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    #ProfessionalSummaryContent {
+        grid-area:  topRight;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1rem;
+       
+    }
+    #firstButton {
+        grid-area: bottomRight;
+      
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    #Skills {
+        background-color: teal;
+        font-size: 0.8rem;
+        display: grid;
+        width:80vw;
+        margin: auto;
+        background-color: teal;
+        grid-template-columns: 10vw 65vw;
+        grid-template-rows: 15vh 6vh;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "topLeft  topRight"
+        "bottomLeft bottomRight"
+        ;
+    }
+    #spanSkills {
+        grid-area: topLeft;   
+        align-items: flex-start;
+        padding: 1rem;
+        justify-content: flex-start;
+    }
+    
+    
+    #skillsDetails {
+          grid-area:  topRight;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding: 1rem;
+    }
+    #secondButton {
+        grid-area: bottomLeft;
+        background-color: teal;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+    }
+
+    #WorkHistory {
+        display: grid;
+        font-size: 0.8rem;
+        width:80vw;
+        margin:  3rem auto;
+        grid-template-columns: 10vw 65vw;
+        grid-template-rows: 135vh 6vh;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "topLeft  topRight"
+        "bottomLeft bottomRight"
+        ;
+    }
+    #spanWorkHistory {
+        grid-area: topLeft;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    #containerWorkHistory {
+        grid-area:  topRight;
+        justify-content: flex-start;
+    }
+    #thirdButton {
+        grid-area: bottomRight;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    #Education {
+        display: grid;
+        font-size: 0.8rem;
+        width:80vw;
+        margin: auto;
+        background-color: teal;
+        grid-template-columns: 10vw 65vw;
+        grid-template-rows: 12vh 6vh;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "topLeft  topRight"
+        "bottomLeft bottomRight"
+        ;
+    }
+    #spanEducation {
+        grid-area: topLeft;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    #educationContent {
+        grid-area:  topRight;
+       justify-content: flex-start;
+    }
+    #fourthButton {
+        grid-area: bottomLeft;
+        background-color: teal;
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+    } 
+
+    
+
+
+}
+
+
+
+/* Large devices (large screen) */
+@media (min-width: 901px) {
+    body {
+        background-color: green;
+    }
+
+
+#details {
+    display: grid;
+    font-size: 1rem;
+    width:80vw;
+    margin:  auto;
+    grid-template-columns: 10vw 65vw;
+    grid-template-rows: 25vh 6vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     }
+#ProfessionalSummary {
+    grid-area: topLeft;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+#ProfessionalSummaryContent {
+    grid-area:  topRight;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+   
+}
+#firstButton {
+    grid-area: bottomRight;  
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#Skills {
+    background-color: teal;
+    font-size: 1rem;
+    display: grid;
+    width:80vw;
+    margin: auto;
+    background-color: teal;
+    grid-template-columns: 10vw 65vw;
+    grid-template-rows: 20vh 6vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanSkills {
+    grid-area: topLeft;   
+    align-items: flex-start;
+    padding: 1rem;
+    justify-content: flex-start;
+}
+
+
+#skillsDetails {
+      grid-area:  topRight;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1rem;
+}
+#secondButton {
+    grid-area: bottomLeft;
+    background-color: teal;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+#WorkHistory {
+    display: grid;
+    font-size: 1rem;
+    width:80vw;
+    margin:  3rem auto;
+    grid-template-columns: 10vw 65vw;
+    grid-template-rows: 170vh 6vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanWorkHistory {
+    grid-area: topLeft;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+#containerWorkHistory {
+    grid-area:  topRight;
+    justify-content: flex-start;
+}
+#thirdButton {
+    grid-area: bottomRight;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#Education {
+    display: grid;
+    font-size: 1rem;
+    width:80vw;
+    margin: auto;
+    background-color: teal;
+    grid-template-columns: 10vw 65vw;
+    grid-template-rows: 15vh 6vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanEducation {
+    grid-area: topLeft;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+#educationContent {
+    grid-area:  topRight;
+   justify-content: flex-start;
+}
+#fourthButton {
+    grid-area: bottomLeft;
+    background-color: teal;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+} 
+
+
+
+}

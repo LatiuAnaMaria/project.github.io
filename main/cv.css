@@ -1,0 +1,225 @@
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+}
+* {
+    box-sizing: border-box;
+  }
+ #name {
+    text-align: center;
+    padding: 1rem;
+    height: 5rem;
+   }
+
+#header {
+    margin: 0;
+}
+nav {
+background-color: teal;
+width: 100%;
+ 
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+nav li { 
+    text-align: center;
+    flex-basis: 10%;
+}
+
+nav a {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+nav a:hover {
+    background-color: white;
+    color: teal;
+}
+
+
+ul.contact {
+    list-style-type: none;
+   
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: teal;
+    color: white;
+    width: 100%;
+    height: 4rem;
+    font-size: 0.8rem;
+    text-align: center;  
+}
+.contactLi {
+    padding-top: 1rem;
+}
+.contentArea {
+    padding: 1rem;
+}
+
+
+.myBtn {    
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    padding: 0.3rem; 
+    border-radius: 10px; 
+    font-size: 15px;
+    margin-bottom: 1rem;
+  } 
+  
+  .myBtn:hover {
+    background-color: #555; 
+    color:white;
+  }
+/* 
+  }
+  footer {
+      font-size: 0.5rem;
+      margin-left: 0.5rem;
+  }
+  #details {
+      display: grid;
+      width:80vw;
+      margin: 3rem auto;
+      grid-template-columns: 20vw 55vw;
+      grid-template-rows: 30vh 10vh;
+      grid-gap: 2rem;
+      grid-template-areas: 
+      "topLeft  topRight"
+      "bottomLeft bottomRight"
+      ;
+  }
+  
+  .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+       }
+  #ProfessionalSummary {
+      grid-area: topLeft;
+           align-items: flex-start;
+      justify-content: flex-start;
+      padding: 1rem;
+  }
+  #ProfessionalSummaryContent {
+      grid-area:  topRight;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 1rem;
+     
+  }
+  #firstButton {
+      grid-area: bottomRight;
+    
+      align-items: flex-end;
+      justify-content: flex-end;
+  }
+
+  #Skills {
+    background-color: teal;
+    display: grid;
+    width:80vw;
+    margin: auto;
+    background-color: teal;
+    grid-template-columns: 20vw 55vw;
+    grid-template-rows: 20vh 10vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanSkills {
+    grid-area: topLeft;   
+    align-items: flex-start;
+    padding: 1rem;
+    justify-content: flex-start;
+}
+
+
+#skillsDetails {
+      grid-area:  topRight;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 1rem;
+}
+
+#secondButton {
+    grid-area: bottomLeft;
+    background-color: teal;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+#WorkHistory {
+    display: grid;
+    width:80vw;
+    margin:  3rem auto;
+    grid-template-columns: 20vw 55vw;
+    grid-template-rows: 130vh 10vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanWorkHistory {
+    grid-area: topLeft;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+#containerWorkHistory {
+    grid-area:  topRight;
+    justify-content: flex-start;
+}
+#thirdButton {
+    grid-area: bottomRight;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#Education {
+    display: grid;
+    width:80vw;
+    margin: auto;
+    background-color: teal;
+    grid-template-columns: 20vw 55vw;
+    grid-template-rows: 20vh 10vh;
+    grid-gap: 2rem;
+    grid-template-areas: 
+    "topLeft  topRight"
+    "bottomLeft bottomRight"
+    ;
+}
+#spanEducation {
+    grid-area: topLeft;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+#educationContent {
+    grid-area:  topRight;
+   justify-content: flex-start;
+}
+#fourthButton {
+    grid-area: bottomLeft;
+    background-color: teal;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}  */
+  
